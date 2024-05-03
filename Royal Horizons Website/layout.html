@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<!-- Reserrved for the link-->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- CSS-->
+        <link rel="stylesheet" href="../Royal Horizons Website/layout.css">
+        <link rel="stylesheet" href="../Royal Horizons Website/PAnimation.css">
+        <link rel="stylesheet" href="../Royal Horizons Website/general.css" />
+        
+
+        <!--Box icons-->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+        <title>Royal Horizons Bank.Co</title>
+        <link rel="icon" type="image/png" href="../Royal Horizons Website/Royal Horizons Logo.png">
+    </head>
+    <body>
+        <nav>
+            <div class="nav-bar">
+                <i class='bx bx-menu siderbarOpen' ></i>
+                <span class="logo navLogo"><a href="../Royal Horizons Website/Index.html"><img src="../Royal Horizons Website/Royal Horizons Logo.png" alt="RH logo" height="50"></a></span>
+
+                <div class="menu">
+                    <div class="logo-toggle">
+                        <span class="logo"><a href="../Royal Horizons Website/Index.html"><img src="../Royal Horizons Website/Royal Horizons Logo.png" alt="RH logo" height="50"></a></span>
+                        <i class='bx bx-x siderbarClose' ></i>
+                    </div>
+
+                    <ul class="nav-links">
+                        <li><a href="../Royal Horizons Website/Accounts.html">Accounts</a></li>
+                        <li><a href="../Royal Horizons Website/cards.html">Cards</a></li>
+                        <li><a href="../Royal Horizons Website/digital.html">Digital</a></li>
+                        <li><a href="../Royal Horizons Website/Accounts.html">Loans</a></li>
+                        <li><a href="../Royal Horizons Website/investmensts.html">Investments</a></li>
+                   
+                    </ul> 
+                </div>
+
+                <div class="darkLight-searchBox">
+                    <div class="dark-light">
+                        <i class='bx bxs-moon moon' ></i>
+                        <i class='bx bxs-sun sun' ></i>
+                    </div>
+
+                    <div class="searchBox">
+                      <div class="searchToggle">
+                        <i class='bx bx-x cancel' ></i>
+                        <i class='bx bx-search search' ></i>
+                        </div>
+
+                        <div class="search-field">
+                            <input type="text" placeholder="Search...">
+                            <i class='bx bx-search' ></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="wholepage">
+        <header class="flex-space">
+            <div class="flex-center gap1">
+              <h2 class="header-text">Royal Horizons Bank.Co</h2>
+            </div>
+            <div class="flex-center gap1">
+              <svg
+                xmlns="http://www.w3.org/2000/svgm"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="user-icon"
+              >
+                <path class="head"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z"
+                />
+              </svg>
+              <h2 class="header-text username-label" style="margin-right: 100px; font-size: 40px;">Jonas!</h2>
+            </div>
+          </header>
+          <main>
+            <section class="display-section">
+              <div class="balance-information flex-space">
+                <div>
+                  <h2 class="secondary-heading">Current Balance</h2>
+                  <p class="date">As of 29/06/2023, 18:32</p>
+                </div>
+                <h1 class="balance-amount" id="number">25952,59&nbsp;$</h1>
+              </div>
+              <div class="analysis">
+                <div class="card card-positive">
+                  <p class="card-title">IN</p>
+                  <h3 class="deposit-total-card card-amount">3000&nbsp;$</h3>
+                </div>
+                <div class="card card-negative">
+                  <p class="card-title">Out</p>
+                  <h3 class="withdraw-total-card card-amount">3000&nbsp;$</h3>
+                </div>
+                <div class="card card-positive">
+                  <p class="card-title">Interest</p>
+                  <h3 class="interest-total-card card-amount">3000&nbsp;$</h3>
+                </div>
+              </div>
+              <div class="table-navigator flex-space">
+                <h3 class="card-amount">Transaction</h3>
+                <button>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="sort-icon"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M8.25 6.75L12 3m0 0l3.75 3.75M12 3v18"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div class="transactions"></div>
+            </section>
+            <section class="operations-container">
+              <div class="operations-data">
+                <div class="flex-space stat">
+                  <h5 class="stats-heading">Average Withdraw</h5>
+                  <h5 class="stats-data avg-withdraw">15$</h5>
+                </div>
+                <div class="flex-space stat">
+                  <h5 class="stats-heading">Maximum Withdraw</h5>
+                  <h5 class="stats-data max-withdraw">15$</h5>
+                </div>
+                <div class="flex-space stat">
+                  <h5 class="stats-heading">Average Deposit</h5>
+                  <h5 class="stats-data avg-deposit">15$</h5>
+                </div>
+              </div>
+              <div class="operations-data">
+                <button class="btn btn-transfer">Transfer Money</button>
+                <button class="btn btn-request">Request Loan</button>
+                <button class="btn btn-close">Close Account</button>
+              </div>
+              <div class="flex-space gap1">
+                <div>
+                  <span class="mins date">00</span><span class="date"> : </span>
+                  <span class="seconds date">00</span>
+                </div>
+                <div class="log-out">
+                  <a href="../Royal Horizons Website/Accounts.html" class="logout-btn"> &larr;&nbsp;Logout</a>
+                </div>
+              </div>
+            </section>
+          </main>
+          <div class="overlay-container hide"></div>
+          <!-- TRANSFER DIALOG -->
+          <div class="dialog-container transfer-dialog hide">
+            <div class="flex-space dialog-btn-container">
+              <h2 class="dialog-heading">Transfer Money</h2>
+              <button class="cls-btn btn-transfer-dialog">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="sort-icon"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+              </button>
+            </div>
+            <form class="login-form transfer-form" action="/">
+              <input
+                type="text"
+                class="field-input transfer-username"
+                placeholder="Transfer To"
+                required
+              />
+              <input
+                type="number"
+                min="1"
+                class="field-input extra-margin transfer-amount"
+                placeholder="Amount"
+                required
+              />
+              <button class="btn">Transfer Money</button>
+            </form>
+            <p class="error">&nbsp;</p>
+          </div>
+          <!-- REQUEST DIALOG -->
+          <div class="dialog-container request-dialog hide">
+            <div class="flex-space dialog-btn-container">
+              <h2 class="dialog-heading">Request Loan</h2>
+              <button class="cls-btn">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="sort-icon"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+              </button>
+            </div>
+            <form class="request-form" action="/">
+              <input
+                type="number"
+                class="field-input request-amount"
+                placeholder="Amount"
+                min="1"
+                required
+              />
+              <button class="btn">Request Loan</button>
+            </form>
+            <p class="error">&nbsp;</p>
+          </div>
+          <!-- CLOSE DIALOG -->
+          <div class="dialog-container close-dialog hide">
+            <div class="flex-space dialog-btn-container">
+              <h2 class="dialog-heading">Close Account</h2>
+              <button class="cls-btn">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="sort-icon"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+              </button>
+            </div>
+            <form class="close-form" action="/">
+              <input
+                type="text"
+                class="field-input closeUsername"
+                placeholder="Username"
+                required
+              />
+              <input
+                type="password"
+                class="field-input extra-margin closePassword"
+                placeholder="Password"
+                required
+              />
+              <button class="btn">Close Account</button>
+            </form>
+            <p class="error">&nbsp;</p>
+          </div>
+          <script src="../Royal Horizons Website/layout.js"></script>
+    
+          <footer>
+            <div class="main-content">
+              <div class="left box">
+                <h2>About us</h2>
+                <div class="content">
+                  <p>Royal Horizons Bank.Co offers integrated financial solutions and exceptional service. They prioritize customer satisfaction, providing tailored banking services for individuals and businesses. With a focus on partnership and innovation, the bank enriches lives by empowering clients with personalized insights and transformative experiences. Royal Horizons Bank.Co stands out for its commitment to excellence and community impact, setting new standards in the banking industry.
+                  </p>
+                  <div class="social">
+                    <a href="https://facebook.com/coding.np"><span class="fab fa-facebook-f"></span></a>
+                    <a href="#"><span class="fab fa-twitter"></span></a>
+                    <a href="https://instagram.com/coding.np"><span class="fab fa-instagram"></span></a>
+                    <a href="https://youtube.com/c/codingnepal"><span class="fab fa-youtube"></span></a>
+                  </div>
+                </div>
+              </div>
+              <div class="center box">
+                <h2>Address</h2>
+                <div class="content">
+                  <div class="place">
+                    <span class="fas fa-map-marker-alt"></span>
+                    <span class="text">Bonifacio, Baguio City</span>
+                  </div>
+                  <div class="phone">
+                    <span class="fas fa-phone-alt"></span>
+                    <span class="text">+63 950 4788 697</span>
+                  </div>
+                  <div class="email">
+                    <span class="fas fa-envelope"></span>
+                    <span class="text">royal.horizons.bank.co@gmail.com</span>
+                  </div>
+                </div>
+              </div>
+              <div class="right box">
+                <h2>Contact us</h2>
+                <div class="content">
+                  <form action="https://api.web3forms.com/submit" method="POST">
+
+                    <input type="hidden" name="access_key" value="b3fc4655-4c50-4165-9440-41f88692d6c8">
+
+                    <div class="name">
+                        <div class="name">Name *</div>
+                        <input type="text" name="name" required>
+                    </div>
+
+                    <div class="email">
+                      <div class="text">Email *</div>
+                      <input type="email" name="email" required>
+                    </div>
+                    <div class="msg">
+                      <div class="text">Message *</div>
+                      <textarea name="message" rows="2" cols="25" required></textarea>
+                    </div>
+
+                    <div class="btn">
+                      <button type="submit">Send</button>
+                      <div id="result"></div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="bottom">
+                <center>
+                    <span class="credit"> <a href="#">Royal Horizons Bank.Co  </a> | </span>
+                    <span class="far fa-copyright"></span><span> 2024 All rights reserved.</span>
+                  </center>
+            </div>
+
+          </div>
+
+          </footer>
+
+
+
+
+<script src="../Royal Horizons WebsiteIndex_script.js"></script>
+<script src="../Royal Horizons Websitehttps://web3forms.com/client/script.js" async defer></script>
+<script src="../Royal Horizons Website/layout.js"></script>
+<script>
+    const form = document.getElementById('form');
+    const result = document.getElementById('result');
+    
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const formData = new FormData(form);
+      const object = Object.fromEntries(formData);
+      const json = JSON.stringify(object);
+      result.innerHTML = "Please wait..."
+    
+        fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: json
+            })
+            .then(async (response) => {
+                let json = await response.json();
+                if (response.status == 200) {
+                    result.innerHTML = "Form submitted successfully";
+                } else {
+                    console.log(response);
+                    result.innerHTML = json.message;
+                }
+            })
+            .catch(error => {
+                console.log(error);
+                result.innerHTML = "Something went wrong!";
+            })
+            .then(function() {
+                form.reset();
+                setTimeout(() => {
+                    result.style.display = "none";
+                }, 3000);
+            });
+    });
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+    </body>
+</html>
